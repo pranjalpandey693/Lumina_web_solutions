@@ -90,6 +90,66 @@ export const api = {
           "Inventory and kitchen workflow",
         ],
       },
+      {
+        key: "logistics",
+        name: "Logistics Platform",
+        label: "Logistics",
+        benefits: [
+          "End-to-end order placement and tracking",
+          "Ops panel for drivers, routes and status",
+          "Driver app with proof of delivery",
+          "Admin dashboard for the full network",
+          "Transparent workflow from pickup to drop",
+        ],
+      },
+      {
+        key: "fintech",
+        name: "Financial Management",
+        label: "Fintech",
+        benefits: [
+          "Loan creation, tracking and repayment",
+          "Employee-based collection workflows",
+          "Pigmy / daily collection integration",
+          "Automated payment posting",
+          "Realtime visibility of dues and collections",
+        ],
+      },
+      {
+        key: "ecom",
+        name: "E-commerce Platform",
+        label: "Ecom",
+        benefits: [
+          "Catalog, categories, pricing and inventory",
+          "Smooth cart and checkout experience",
+          "Secure payment gateway integration",
+          "Order and delivery management",
+          "Built to scale catalogs and traffic",
+        ],
+      },
+      {
+        key: "lms",
+        name: "Learning Platform",
+        label: "Education",
+        benefits: [
+          "Chapter-based video learning paths",
+          "Auto assessments after every module",
+          "Instant certificate generation",
+          "Accurate evaluation without manual grading",
+          "Fully automated learning workflow",
+        ],
+      },
+      {
+        key: "invoice",
+        name: "Invoice & Payments",
+        label: "Invoice Portal",
+        benefits: [
+          "Milestone-based invoice generation",
+          "Instant paid / pending tracking",
+          "Smart reminders before due dates",
+          "Auto confirmation and status updates",
+          "Final ledger invoice consolidation",
+        ],
+      },
     ]),
   plans: () =>
     getJson<Plan[]>("/api/plans", [
