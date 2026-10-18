@@ -179,6 +179,17 @@ export default function Home() {
       if (p.length) setProducts(p);
     });
   }, []);
+  
+  // Add this below the existing useEffect
+  useEffect(() => {
+    if (products.length < 2) return;
+  
+    const interval = window.setInterval(() => {
+      setActive((current) => (current + 1) % products.length);
+    }, 4000);
+  
+    return () => window.clearInterval(interval);
+  }, [products.length]);
 
   const product = products[active];
 

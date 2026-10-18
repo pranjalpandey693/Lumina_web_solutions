@@ -666,7 +666,7 @@ textarea {
   font-size: clamp(36px, 6vw, 68px);
   margin: 10px 0 12px;
 }
-
+j
 .preview-wrap {
   display: grid;
   gap: 48px;
@@ -855,7 +855,7 @@ textarea {
   .project-grid,
   .pricing-grid,
   .process {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0,1fr);
   }
   .nav {
     display: none;
@@ -885,4 +885,30 @@ textarea {
   .plan.featured {
     transform: none;
   }
+}
+
+
+
+.product-tabs {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  padding: 4px 2px 12px;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.product-tabs button {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+.product-tabs::-webkit-scrollbar {
+  height: 4px;
+}
+
+.product-tabs::-webkit-scrollbar-thumb {
+  background: var(--lime);
+  border-radius: 10px;
 }
