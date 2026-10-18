@@ -95,7 +95,7 @@ export const api = {
     getJson<Plan[]>("/api/plans", [
       {
         name: "Spark",
-        price: 1499,
+        price: 21999,
         cadence: "project",
         tagline: "Launch a sharp presence",
         featured: false,
@@ -110,7 +110,7 @@ export const api = {
       },
       {
         name: "Orbit",
-        price: 4200,
+        price: 31999,
         cadence: "project",
         tagline: "The studio favourite",
         featured: true,
@@ -125,7 +125,7 @@ export const api = {
       },
       {
         name: "Nova",
-        price: 8900,
+        price: 51999,
         cadence: "project",
         tagline: "Product-grade platforms",
         featured: false,

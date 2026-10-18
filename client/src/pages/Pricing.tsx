@@ -30,8 +30,7 @@ export default function Pricing() {
             like a product.
           </h1>
           <p className="sub">
-            Three orbits. Pick a starting mass — we can always expand the universe later. These
-            numbers are placeholders you can edit.
+            Three orbits. Pick a starting mass — we can always expand the universe later.
           </p>
         </div>
 
